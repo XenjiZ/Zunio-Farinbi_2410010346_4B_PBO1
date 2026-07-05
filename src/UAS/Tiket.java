@@ -1,36 +1,31 @@
 package UAS;
 
 public class Tiket {
-    // 3. ATRIBUT & 7. ENCAPSULATION
-    private String judulFilm;
+    private String judulfilm;
     private double hargaDasar;
 
-    // 4. CONSTRUCTOR
-    public Tiket(String judulFilm, double hargaDasar) {
-        this.judulFilm = judulFilm;
+    public Tiket(String judulfilm, double hargaDasar) {
+        this.judulfilm = judulfilm;
         this.hargaDasar = hargaDasar;
     }
 
-    // 6. ACCESSOR
-    public String getJudulFilm() {
-        return judulFilm;
+    public String getJudulfilm() {
+        return judulfilm;
     }
 
     public double getHargaDasar() {
         return hargaDasar;
     }
 
-    // 5. MUTATOR
-    public void setJudulFilm(String judulFilm) {
-        this.judulFilm = judulFilm;
+    public void setJudulfilm(String judulfilm) {
+        this.judulfilm = judulfilm;
     }
 
     public void setHargaDasar(double hargaDasar) {
         this.hargaDasar = hargaDasar;
     }
-
-    // Pendukung 9. POLYMORPHISM
-    public String cetakInfo() {
-        return "Film: " + judulFilm + " | Harga Dasar: Rp" + hargaDasar;
+    
+    public String CetakInfo() {
+        return "Film : " + judulfilm + "| Harga Dasar: Rp" + hargaDasar;
     }
 }

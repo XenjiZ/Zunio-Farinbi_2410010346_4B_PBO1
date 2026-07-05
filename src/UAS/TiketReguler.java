@@ -1,17 +1,18 @@
+
 package UAS;
 
-// 8. INHERITANCE
-public class TiketReguler extends Tiket {
+public class TiketReguler extends Tiket{
     private String nomorKursi;
 
-    public TiketReguler(String judulFilm, double hargaDasar, String nomorKursi) {
-        super(judulFilm, hargaDasar);
+    public TiketReguler(String nomorKursi, String judulfilm, double hargaDasar) {
+        super(judulfilm, hargaDasar);
         this.nomorKursi = nomorKursi;
     }
 
-    // 9. POLYMORPHISM (Method Overriding)
+    
+    
     @Override
-    public String cetakInfo() {
-        return super.cetakInfo() + " | Tipe: Reguler | Kursi: " + nomorKursi;
-    }
+    public String CetakInfo() {
+        return super.CetakInfo() + "| Tipe: Reguler | Kursi :" + nomorKursi;
+    }    
 }
